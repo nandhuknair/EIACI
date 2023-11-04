@@ -4,12 +4,11 @@
 }
 body{
    
-    width: 100%;
-    height: fit-content;
     background-image: url(./images/1246918.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+ 
    
    
 }
@@ -27,7 +26,7 @@ body{
 .nav-content a{
 
     text-decoration: none;
-    font-size: larger;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
@@ -53,6 +52,7 @@ body{
 .nav-content{
     display: flex;
     flex-basis: 45%;
+    gap: 15px;
     justify-content: space-around;
 
 }
@@ -62,7 +62,7 @@ body{
     flex-basis:10%;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 18px;  
+    padding-left: 10px;   
     border-radius: 25px;
     transition: 0.5s;
 }
@@ -72,22 +72,30 @@ body{
   border: none;
   background-color: transparent;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 2px;
 
  
 }
 .search-bar input::placeholder{
     
-    font-size: 17px;
+    font-size: 14px;
     color: #ccc;
     letter-spacing: 1px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
 
+}
+.search-bar img{
+
+    height: 18px;
 }
 
 
 .logo
 {
     transition: 1s ease;
+    height: 47px;
+    width: 47px;
 }
 .logo:hover{
 
@@ -116,22 +124,20 @@ body{
     
     
     
+    
 }
 .text-container h1
 {
-    font-size: 470px;
-    font-weight:800;
-    font-family: 'Gurajada', sans-serif; 
-    line-height: 200px;
-    letter-spacing: 7px;
-    text-align: center;
-    cursor: pointer;
+    font-size: 200px;
+    font-weight: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     transition: 1s ease;
+    cursor: pointer;
     
 }
 
 .h1:hover{
-    scale: 1.5;
+    scale: 1.1;
 }
 
 
@@ -139,13 +145,12 @@ button{
 
     width: fit-content;
     padding: 1% 2%;
-    border: 8px solid #94a1ac36;
+    border: 4px solid #94a1ac36;
     outline: none;
     margin: 2% 0 0 10px;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: 2.5px;
     background-color: transparent;
-    margin: 0 2% 0 0;
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     color: #ffffff61;
@@ -201,18 +206,19 @@ span:hover{
 }
 
 .car{
-    height: 100vh;
+    
     display: flex;
-    flex-direction: column;
     margin-top: 5%;
-   
-}
+    padding: 5% 15%;
+    height: 100vh;
+
+  }
 
 .step-container{
-    margin: 5% 0% 0 0;
-    padding: 5% 15%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
    
     
 }
@@ -229,15 +235,14 @@ span:hover{
     flex-basis: 27%;  
     justify-content: space-between;
     padding-top: 10px;
-    width: 400px;
-    
+    max-width: 300px;
     
 }
 
 .step-container img{
 
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 .left{
@@ -250,14 +255,14 @@ span:hover{
 .step-text h3{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color: #ccc;
     letter-spacing: 1px;
 }
 
 .step-text h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     color: #fff;
     padding-top: 10px;
@@ -267,7 +272,7 @@ span:hover{
 .step-text p{
 
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     color: #ccc;
     padding-top: 10px;
     
@@ -281,22 +286,23 @@ span:hover{
     color: #7f6c6d;
     padding: 3%;
     gap: 20px;
+    padding: 8% 0;
     
 }
 .position h1{
 
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 3px;
 }
 
 .position p{
-    padding: 0 25%;
+    padding: 0 20%;
     font-family: 'Poppins', sans-serif;
     color: #ccc;
-    font-size:large;
-    letter-spacing: 0.5px;
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 .team{
     display: flex;
@@ -312,7 +318,7 @@ span:hover{
 
     color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 3px;
 }
 
@@ -320,7 +326,7 @@ span:hover{
     padding: 0 25%;
     font-family: 'Poppins', sans-serif;
     color: #ccc;
-    font-size:large;
+    font-size: 17px;
     letter-spacing: 0.5px;
 }
 .team span{
@@ -329,27 +335,45 @@ span:hover{
     font-weight: 700;
     letter-spacing: 3px;
 }
-.team-detail{
 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 3% 6%;
-    padding-bottom: 5%;
-    gap: 100px;
+
+.grid-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+  
+    
 }
 
 .team-member{
-
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
     text-align: center;
-
+    gap: 15px;
+    
 }
+
+.team-detail{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-basis: 100%;
+    
+}
+.txt-container{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 12%;
+}
+
 .team-member img{
 
    box-shadow: 10px 10px  10px rgba(0, 0, 0, 0.3);
-  
+   height: 250px;
+   width: 250px;
 }
 
 .team-member h2{
@@ -371,7 +395,7 @@ span:hover{
        
         font-family: 'Poppins', sans-serif;
         color: #ccccccdc;
-        font-size: 16px;
+        font-size: 12px;
         letter-spacing: 0.5px;
     }
 
@@ -382,10 +406,11 @@ span:hover{
     
    display: flex;
    justify-content: space-between;
-   height: 35vh;
+   height: fit-content;
    padding-right: 6%;
    background-color: rgba(13, 13, 14, 0.756);
    padding-top: 4% ;
+
 
 }
 
@@ -397,17 +422,23 @@ span:hover{
     align-items: center;
    }
 
+  .footer-left img{
+
+    height: 40px;
+    width: 40px;
+
+   }
+
    .footer-right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 90px;
     gap: 10% ;
    }
 
    .rights{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 5%;
    }
 
@@ -416,19 +447,24 @@ span:hover{
     color: #ffffffe0;
    }
 
+  
+
 .rights p{
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   padding-right: 12%;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 14px;
   color: #ccc;
+  padding-top: 10px;
+  line-height: 30px;
+  
 }
 
 .social,.navigation, a{
     text-decoration: none;
     color: #ccc;
     transition: 0.5 ease;
+    padding-top: 5px;
     
 }
 
@@ -441,24 +477,31 @@ span:hover{
    .social{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 5%;
+    
+    
    }
    
   
  .navigation{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 5%;
 
    }
+
+
    .copyright{
     grid-area: 2 / 1 / 3 / 4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ccc;
+    height: fit-content;
+    padding-top: 10px;
+    
+   
+
    }
 
    .term{
@@ -476,6 +519,7 @@ span:hover{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+    font-size: 12px;
     color: #ccc;
    }
 
@@ -493,4 +537,127 @@ span:hover{
     color: #fff;
 
 
+   }
+
+   .login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.577);
+    padding: 5% 0;
+}
+
+   .login-form{
+    height: 85vh;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     flex-basis: 25%;
+     justify-content: space-evenly;
+     padding: 0px 6%;
+     
+     
+   }
+
+   .login-form img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+   }
+
+   .img-usr{
+
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    background-color: transparent;
+    border-radius: 35px;
+    width: 100%;
+    padding: 3% 6%;
+   }
+
+   .img-usr input{
+
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 3% 0;
+    margin-top: 2%;
+    color: #fff;
+
+   }
+  ::placeholder{
+    font-size: 16px;
+   }
+
+  .img-usr img{
+    height: 27px;
+    width: 27px;
+   }
+
+   .remember{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+   }
+
+   .remember p{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 4px;
+    
+   }
+
+   .remember a{
+
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+   }
+   .check{
+    display: flex;
+   }
+
+   .login-form button{
+    padding: 2% 7%;
+    border-radius: 35px;
+    margin-top: 4%;
+   }
+   .login-form button:hover{
+    background-color: #5cb85c;
+    color: blanchedalmond;
+   }
+
+   .login-form a{
+    font-family: 'Poppins', sans-serif;
+     font-size: 14px;
+   }
+
+   #user{
+    padding-top: 10px;
+   }
+
+   .login-form h1{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #ccc;
+
+   }
+
+   .img-usr input:hover{
+     
+     padding-bottom: 6%;
+        
    }
